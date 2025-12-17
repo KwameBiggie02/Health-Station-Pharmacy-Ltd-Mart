@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href=" https://media.istockphoto.com/id/2234934544/photo/healthcare-insurance-and-medical-coverage-concept-white-medical-cross-health-protection.jpg?s=612x612&w=0&k=20&c=s6t5MxwCXHRa3w4eTzvRTAPptOEg5WUeoTcbs6-KzfY= ">
+    <title>About Us | Health Station Pharmacy Ltd & Mart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-blue: #004A7A;
+            --teal: #04B4D8;
+            --white: #FFFFFF;
+            --navy: #022B42;
+            --light-blue: #E8F4F8;
+            --gray: #f8f9fa;
+            --shadow: rgba(2, 43, 66, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--navy);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--deep-blue);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--teal), var(--deep-blue));
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: var(--deep-blue);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, var(--deep-blue), var(--teal));
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(4, 180, 216, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(4, 180, 216, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--deep-blue);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--deep-blue);
+            border: 2px solid var(--deep-blue);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--deep-blue);
+            color: var(--white);
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px var(--shadow);
+        }
+
+        header.scrolled {
+            padding: 12px 0;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 20px rgba(2, 43, 66, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--deep-blue), var(--teal));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            color: var(--deep-blue);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-size: 0.9rem;
+            color: var(--teal);
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--navy);
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--teal);
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--teal);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.8rem;
+            color: var(--deep-blue);
+            cursor: pointer;
+        }
+
+        /* About Hero Section */
+        .about-hero {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(4, 180, 216, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 74, 122, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(2, 43, 66, 0.15) 0%, transparent 50%);
+            background-size: 600px 600px;
+            opacity: 0.6;
+        }
+
+        .about-hero:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,128L48,138.7C96,149,192,171,288,176C384,181,480,171,576,154.7C672,139,768,117,864,122.7C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .about-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        /* Story Section */
+        .story-section {
+            background-color: var(--white);
+        }
+
+        .story-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .story-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(2, 43, 66, 0.15);
+            height: 500px;
+            background: linear-gradient(135deg, var(--deep-blue), var(--teal));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+
+        .story-content h2 {
+            margin-bottom: 25px;
+        }
+
+        .story-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .milestones {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .milestone {
+            text-align: center;
+            padding: 25px 15px;
+            border-radius: 15px;
+            background-color: var(--light-blue);
+            transition: var(--transition);
+        }
+
+        .milestone:hover {
+            transform: translateY(-5px);
+            background-color: rgba(4, 180, 216, 0.1);
+        }
+
+        .milestone-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--teal);
+            margin-bottom: 10px;
+        }
+
+        .milestone-text {
+            font-size: 1rem;
+            color: var(--navy);
+            font-weight: 500;
+        }
+
+        /* Mission & Vision Section */
+        .mission-vision {
+            background-color: var(--gray);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-vision:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 10% 90%, rgba(4, 180, 216, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 10%, rgba(0, 74, 122, 0.05) 0%, transparent 50%);
+            background-size: 800px 800px;
+        }
+
+        .mv-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mv-card {
+            background-color: var(--white);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 15px 40px var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mv-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(4, 180, 216, 0.15);
+        }
+
+        .mv-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--deep-blue), var(--teal));
+        }
+
+        .mv-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--deep-blue), var(--teal));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            color: var(--white);
+            font-size: 2.2rem;
+        }
+
+        .mv-card h3 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .mv-card p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Values Section */
+        .values-section {
+            background-color: var(--white);
+        }
+
+        .values-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .value-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(4, 180, 216, 0.15);
+        }
+
+        .value-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--deep-blue), var(--teal));
+        }
+
+        .value-icon {
+            width: 70px;
+            height: 70px;
+            background-color: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--teal);
+            font-size: 1.8rem;
+            transition: var(--transition);
+        }
+
+        .value-card:hover .value-icon {
+            background-color: var(--teal);
+            color: var(--white);
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* Team Section */
+        .team-section {
+            background-color: var(--gray);
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .team-card {
+            background-color: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(4, 180, 216, 0.15);
+        }
+
+        .team-image {
+            height: 280px;
+            background-color: var(--light-blue);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .team-card:hover .team-image img {
+            transform: scale(1.05);
+        }
+
+        .team-content {
+            padding: 30px;
+        }
+
+        .team-name {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .team-role {
+            color: var(--teal);
+            font-weight: 500;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .team-bio {
+            color: rgba(2, 43, 66, 0.8);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .team-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--light-blue);
+            border-radius: 50%;
+            color: var(--deep-blue);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .team-social a:hover {
+            background-color: var(--teal);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--deep-blue), var(--teal));
+            color: var(--white);
+            text-align: center;
+            padding: 100px 0;
+            border-radius: 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background: var(--white);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--teal);
+            border-radius: 2px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--teal);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--teal);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+            
+            .story-container,
+            .mv-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .story-image {
+                height: 400px;
+                order: 2;
+            }
+            
+            .story-content {
+                order: 1;
+            }
+            
+            .milestones {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                gap: 0;
+                box-shadow: 0 10px 20px var(--shadow);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+                padding: 15px 0;
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 10px;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .about-hero {
+                padding: 150px 0 80px;
+            }
+            
+            .about-hero h1 {
+                font-size: 2.4rem;
+            }
+            
+            section {
+                padding: 80px 0;
+            }
+            
+            .mv-card {
+                padding: 40px 30px;
+            }
+            
+            .milestones {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .values-container,
+            .team-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .team-card {
+                max-width: 350px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Health Station</h1>
+                    <span>Pharmacy Ltd & Mart</span>
+                </div>
+            </a>
+            
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us .html">About Us</a></li>
+                <li><a href="our services.html">Our Services</a></li>
+                <li><a href="our products.html">Our Products</a></li>
+                <li><a href="blogs.html">Health Blogs</a></li>
+                <li><a href="contact.html" class="btn btn-primary">CONTACT US</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1>Our Story & Commitment</h1>
+                <p>Health Station Pharmacy Ltd & Mart has been serving our community with dedication, compassion, and professional healthcare services. We are more than just a pharmacy – we are your healthcare partner.</p>
+                <a href="#story" class="btn btn-primary">Our Journey</a>
+                <a href="#team" class="btn btn-secondary">Meet Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="story-container">
+                <div class="story-image">
+                   <img src=" https://images.pexels.com/photos/12512672/pexels-photo-12512672.jpeg " alt="Our Journey" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
+                </div>
+                
+                <div class="story-content">
+                    <h2>Our Journey</h2>
+                    <p>Health Station Pharmacy Ltd & Mart was founded in 2025 , a passionate man with a vision to create a comprehensive healthcare hub that serves all community needs under one roof.</p>
+                    <p>Starting as a small neighborhood pharmacy, we've grown into a full-service healthcare destination that combines pharmaceutical expertise with daily essential products. Our expansion to include a mart section in 2015 was driven by our commitment to provide complete convenience to our valued customers.</p>
+                    <p>Today, we stand as a trusted healthcare partner for thousands of families, providing not just medications but also health screenings, wellness advice, and quality daily essentials. Our team of licensed pharmacists, healthcare professionals, and customer service staff work together to ensure every visit meets your healthcare needs.</p>
+                    
+                    <div class="milestones">
+                        <div class="milestone">
+                            <div class="milestone-number">5+</div>
+                            <div class="milestone-text">Years of Service</div>
+                        </div>
+                        <div class="milestone">
+                            <div class="milestone-number">10K+</div>
+                            <div class="milestone-text">Happy Customers</div>
+                        </div>
+                        <div class="milestone">
+                            <div class="milestone-number">24/7</div>
+                            <div class="milestone-text">Emergency Service</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Mission & Vision</h2>
+                <p>Guiding principles that define who we are and what we strive for</p>
+            </div>
+            
+            <div class="mv-container">
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To provide accessible, comprehensive healthcare services and quality products that enhance the wellbeing of our community. We are committed to delivering personalized care with professionalism, compassion, and integrity, ensuring every customer receives the attention and support they deserve for their health and daily needs.</p>
+                </div>
+                
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading integrated pharmacy and mart in our region, recognized for exceptional healthcare services, customer-centric approach, and community impact. We aim to continuously innovate and expand our offerings while maintaining the trusted, personalized care that has been our foundation since day one.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Values</h2>
+                <p>The principles that guide every decision and interaction at Health Station</p>
+            </div>
+            
+            <div class="values-container">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Compassion</h3>
+                    <p>We treat every customer with empathy, understanding, and genuine care for their wellbeing.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>We maintain the highest ethical standards in all our services and business practices.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Expertise</h3>
+                    <p>Our team consists of qualified professionals committed to continuous learning and excellence.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>We are actively involved in and dedicated to improving the health of our local community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Team</h2>
+                <p>Dedicated healthcare professionals committed to your wellbeing</p>
+            </div>
+            
+            <div class="team-container">
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src=" https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg  " alt="Team Member" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="team-content">
+                        
+                        <p class="team-role">Clinical Pharmacist</p>
+                        <p class="team-bio"> In medication therapy management and immunization services. We are certified in diabetes education and provides personalized medication counseling.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src=" https://images.pexels.com/photos/5327920/pexels-photo-5327920.jpeg " alt="Team Member" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="team-content">
+                        
+                        <p class="team-role">Mart Manager</p>
+                        <p class="team-bio"> Our mart operations, ensuring we stock quality products that meet our customers' daily needs. We focuses on product selection and customer satisfaction.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Experience Our Care</h2>
+            <p>Visit Health Station Pharmacy Ltd & Mart today and discover why thousands of families trust us with their healthcare and daily needs. Our team is ready to welcome you with professional, compassionate service.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <a href="our services.html" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+<br>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Health Station</h3>
+                    <p>Your trusted partner in health and wellness. We provide comprehensive pharmaceutical care and quality healthcare products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our services.html">Services</a></li>
+                        <li><a href="our products.html">Products</a></li>
+                        <li><a href="about us .html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">Medical Tests</a></li>
+                        <li><a href="services.html">Pharmacy Services</a></li>
+                        <li><a href="products.html">Mart Products</a></li>
+                        <li><a href="services.html">Immunizations</a></li>
+                        <li><a href="services.html">Health Screenings</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare Avenue, City</li>
+                        <li><i class="fas fa-phone"></i> 0257971767 / 0202054157</li>
+                        <li><i class="fas fa-envelope"></i> info@healthstationpharmacy.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Emergency Service</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Health Station Pharmacy Ltd & Mart. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #04B4D8;"></i> for your health</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Animate milestone counters
+        const milestones = document.querySelectorAll('.milestone-number');
+        const observerOptions = {
+            threshold: 0.5
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const milestone = entry.target;
+                    const targetNumber = parseInt(milestone.textContent);
+                    let currentNumber = 0;
+                    const increment = targetNumber / 50; // Adjust speed
+                    
+                    const timer = setInterval(() => {
+                        currentNumber += increment;
+                        if (currentNumber >= targetNumber) {
+                            milestone.textContent = targetNumber + '+';
+                            clearInterval(timer);
+                        } else {
+                            milestone.textContent = Math.floor(currentNumber) + '+';
+                        }
+                    }, 30);
+                    
+                    observer.unobserve(milestone);
+                }
+            });
+        }, observerOptions);
+        
+        milestones.forEach(milestone => {
+            observer.observe(milestone);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

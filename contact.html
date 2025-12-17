@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://media.istockphoto.com/id/2234934544/photo/healthcare-insurance-and-medical-coverage-concept-white-medical-cross-health-protection.jpg?s=612x612&w=0&k=20&c=s6t5MxwCXHRa3w4eTzvRTAPptOEg5WUeoTcbs6-KzfY= ">
+    <title>Contact Us | Health Station Pharmacy Ltd & Mart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-blue: #004A7A;
+            --teal: #04B4D8;
+            --white: #FFFFFF;
+            --navy: #022B42;
+            --light-blue: #E8F4F8;
+            --gray: #f8f9fa;
+            --shadow: rgba(2, 43, 66, 0.1);
+            --transition: all 0.3s ease;
+            --glow: 0 0 10px rgba(4, 180, 216, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--navy);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--deep-blue);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--teal), var(--deep-blue));
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: var(--deep-blue);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, var(--deep-blue), var(--teal));
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(4, 180, 216, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(4, 180, 216, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--deep-blue);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--deep-blue);
+            border: 2px solid var(--deep-blue);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--deep-blue);
+            color: var(--white);
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px var(--shadow);
+        }
+
+        header.scrolled {
+            padding: 12px 0;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 20px rgba(2, 43, 66, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--deep-blue), var(--teal));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            color: var(--deep-blue);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-size: 0.9rem;
+            color: var(--teal);
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--navy);
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--teal);
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--teal);
+            transition: var(--transition);
+        }
+
+        /* WhatsApp styles */
+        .social-links a.whatsapp-link {
+            background-color: transparent;
+            color: #25D366;
+            border: 2px solid rgba(37,211,102,0.08);
+        }
+
+        .social-links a.whatsapp-link:hover {
+            background-color: rgba(37,211,102,0.12);
+            color: #fff;
+            border-color: rgba(37,211,102,0.2);
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            cursor: pointer;
+            animation: whatsappJiggle 3.5s infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes whatsappJiggle {
+            0%   { transform: rotate(0) scale(1); }
+            10%  { transform: rotate(-10deg) scale(1.05); }
+            20%  { transform: rotate(10deg) scale(1.05); }
+            30%  { transform: rotate(-10deg) scale(1.05); }
+            40%  { transform: rotate(10deg) scale(1.05); }
+            50%  { transform: rotate(0) scale(1); }
+            100% { transform: rotate(0) scale(1); }
+        }
+
+        @media (max-width: 480px) {
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 1.8rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.8rem;
+            color: var(--deep-blue);
+            cursor: pointer;
+        }
+
+        /* Contact Hero */
+        .contact-hero {
+            background: linear-gradient(135deg, var(--deep-blue), var(--teal));
+            color: var(--white);
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .contact-hero:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,128L48,138.7C96,149,192,171,288,176C384,181,480,171,576,154.7C672,139,768,117,864,122.7C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .contact-hero h1 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .contact-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        /* Contact Information */
+        .contact-info-section {
+            background-color: var(--white);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .contact-card {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(4, 180, 216, 0.1);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(4, 180, 216, 0.15);
+        }
+
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--deep-blue), var(--teal));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: var(--white);
+            font-size: 1.8rem;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .contact-item i {
+            color: var(--teal);
+            margin-right: 15px;
+            margin-top: 5px;
+            font-size: 1.2rem;
+            width: 20px;
+        }
+
+        .contact-text {
+            flex: 1;
+        }
+
+        .contact-text strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--navy);
+        }
+
+        .contact-text span {
+            color: rgba(2, 43, 66, 0.8);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Contact Form */
+        .contact-form-container {
+            background-color: var(--white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px var(--shadow);
+            border: 1px solid rgba(4, 180, 216, 0.1);
+        }
+
+        .contact-form-container h3 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: var(--navy);
+            font-size: 1.1rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 18px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            background-color: var(--white);
+            color: var(--navy);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--teal);
+            box-shadow: var(--glow);
+            background-color: rgba(4, 180, 216, 0.02);
+        }
+
+        .form-group input:hover,
+        .form-group textarea:hover,
+        .form-group select:hover {
+            border-color: #b0b0b0;
+        }
+
+        .form-group input:focus:hover,
+        .form-group textarea:focus:hover,
+        .form-group select:focus:hover {
+            border-color: var(--teal);
+        }
+
+        .form-group textarea {
+            min-height: 180px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .form-submit .btn {
+            padding: 18px 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Map Section */
+        .map-section {
+            background-color: var(--gray);
+            padding: 80px 0;
+        }
+
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(2, 43, 66, 0.15);
+            height: 500px;
+            position: relative;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--light-blue), #f0f8ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--deep-blue);
+            text-align: center;
+        }
+
+        .map-placeholder i {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            color: var(--teal);
+        }
+
+        .map-placeholder h3 {
+            margin-bottom: 10px;
+        }
+
+        .map-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(2, 43, 66, 0.9), transparent);
+            color: var(--white);
+            padding: 30px;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .map-container:hover .map-overlay {
+            transform: translateY(0);
+        }
+
+        .map-overlay-content h3 {
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .map-overlay-content p {
+            margin-bottom: 5px;
+            opacity: 0.9;
+        }
+
+        /* Hours Section */
+        .hours-section {
+            background-color: var(--white);
+        }
+
+        .hours-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hours-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(2, 43, 66, 0.15);
+            height: 400px;
+            background: linear-gradient(135deg, var(--deep-blue), var(--teal));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hours-image i {
+            font-size: 8rem;
+            color: var(--white);
+            opacity: 0.8;
+        }
+
+        .hours-content h2 {
+            margin-bottom: 30px;
+        }
+
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .hours-table tr {
+            border-bottom: 1px solid rgba(2, 43, 66, 0.1);
+        }
+
+        .hours-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .hours-table td {
+            padding: 18px 0;
+            font-size: 1.1rem;
+        }
+
+        .hours-table td:first-child {
+            font-weight: 500;
+            color: var(--navy);
+        }
+
+        .hours-table td:last-child {
+            text-align: right;
+            color: var(--deep-blue);
+            font-weight: 600;
+        }
+
+        .emergency-note {
+            background-color: rgba(4, 180, 216, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid var(--teal);
+            margin-top: 30px;
+        }
+
+        .emergency-note h4 {
+            color: var(--teal);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--deep-blue), var(--teal));
+            color: var(--white);
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+        }
+
+        .cta-section h2:after {
+            background: var(--white);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--teal);
+            border-radius: 2px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--teal);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--teal);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hours-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hours-image {
+                order: 2;
+                height: 300px;
+            }
+            
+            .hours-content {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                gap: 0;
+                box-shadow: 0 10px 20px var(--shadow);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+                padding: 15px 0;
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 10px;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .contact-hero {
+                padding: 150px 0 80px;
+            }
+            
+            .contact-hero h1 {
+                font-size: 2.4rem;
+            }
+            
+            .contact-card,
+            .contact-form-container {
+                padding: 30px;
+            }
+            
+            .map-container {
+                height: 400px;
+            }
+            
+            section {
+                padding: 80px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .contact-form-container {
+                padding: 25px;
+            }
+            
+            .map-container {
+                height: 300px;
+            }
+            
+            .hours-image i {
+                font-size: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Health Station</h1>
+                    <span>Pharmacy Ltd & Mart</span>
+                </div>
+            </a>
+            
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us .html">About Us</a></li>
+                <li><a href="our services.html">Our Services</a></li>
+                <li><a href="our products.html">Our Products</a></li>
+                <li><a href="blogs.html">Health Blogs</a></li>
+                <li><a href="contact.html" class="btn btn-primary">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get In Touch With Us</h1>
+            <p>We're here to help with all your healthcare needs. Reach out to us through any of the contact methods below or visit our pharmacy in person.</p>
+            <a href="#contact-form" class="btn btn-primary">Send Message</a>
+            <a href="#map" class="btn btn-secondary">Find Our Location</a>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <div class="contact-text">
+                                <strong>Health Station Pharmacy Ltd & Mart</strong>
+                                <span>Adjacent Millenium City District Police </span>
+                                <span>Kasoa</span>
+                                <span>CG-1617-3594</span>
+                            </div>
+                        </div>
+                        <a href="#map" class="btn btn-outline" style="margin-top: 20px; display: inline-block;">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Contact Numbers</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-text">
+                                <strong>Main Pharmacy</strong>
+                                <span>025 797 1767</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-volume"></i>
+                            <div class="contact-text">
+                                <strong>Emergency Line</strong>
+                                <span>020 205 4157</span>
+                                <span style="color: var(--teal); font-size: 0.9rem;">Available 24/7</span>
+                            </div>
+                        </div>
+                        <a href="tel:0257971767" class="btn btn-primary" style="margin-top: 20px; display: inline-block;">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email & Online</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <strong>General Inquiries</strong>
+                                <span>hspharmacyghana@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="social-links" style="margin-top: 25px;">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <!-- WhatsApp link (opens chat) -->
+                                <a href="https://wa.me/233257971767?text=Hello%20Health%20Station%20I%20need%20help" target="_blank" rel="noopener" class="whatsapp-link" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container" id="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="prescription">Prescription Question</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="service">Service Information</option>
+                                <option value="appointment">Appointment Request</option>
+                                <option value="feedback">Feedback/Suggestion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Our Location</h2>
+                <p>Visit us at our conveniently located pharmacy and mart</p>
+            </div>
+            
+            <div class="map-container" onclick="window.open('https://www.google.com/maps/search/?api=1&query=Millenium+City+District+Police+Headquarters,+Kasoa,+CG-1617-3594','_blank')">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Health Station Pharmacy Ltd & Mart</h3>
+                    <p>Millenium City District Policestartion , Kasoa — CG-1617-3594</p>
+                    <p style="margin-top: 20px;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Millenium+City+District+Police+Headquarters,+Kasoa,+CG-1617-3594" 
+                           target="_blank" 
+                           class="btn btn-outline" 
+                           style="color: var(--deep-blue); border-color: var(--deep-blue);">
+                            <i class="fas fa-external-link-alt"></i> Open in Google Maps
+                        </a>
+                    </p>
+                </div>
+                
+                <div class="map-overlay">
+                    <div class="map-overlay-content">
+                        <h3>Parking & Accessibility</h3>
+                        <p><i class="fas fa-parking"></i> Free customer parking available</p>
+                        <p><i class="fas fa-wheelchair"></i> Wheelchair accessible entrance</p>
+                        <p><i class="fas fa-bus"></i> Bus routes: 12, 24, 36 stop nearby</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours-section">
+        <div class="container">
+            <div class="hours-container">
+                <div class="hours-image">
+                    <img src="https://media.istockphoto.com/id/2218490977/vector/office-hours-hanging-business-sign.jpg?s=612x612&w=0&k=20&c=upmBhQ7mTkNePwCbgiH4xiZ0MWZOsmqGOFR3iJy-9_s= " alt="Operating Hours Image" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                
+                <div class="hours-content">
+                    <h2>Operating Hours</h2>
+                    <p>We're here to serve you with extended hours including weekends and holidays.</p>
+                    
+                    <table class="hours-table">
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>8:00 AM - 10:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Public Holidays</td>
+                            <td>10:00 AM - 4:00 PM</td>
+                        </tr>
+                    </table>
+                    
+                    <div class="emergency-note">
+                        <h4><i class="fas fa-exclamation-circle"></i> Emergency Services</h4>
+                        <p>For after-hours prescription emergencies, please call our 24/7 emergency line: <strong>020 205 4157</strong>. A pharmacist is always on call for urgent medication needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Visit Us?</h2>
+            <p>Whether you need prescription refills, medical tests, or daily essentials, our team is ready to assist you with professional, compassionate care.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="tel:0257971767" class="btn btn-primary">
+                    <i class="fas fa-phone"></i> Call Now: 025 797 1767
+                </a>
+                <a href="#contact-form" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Send Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Health Station</h3>
+                    <p>Your trusted partner in health and wellness. We provide comprehensive pharmaceutical care and quality healthcare products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our services.html">Services</a></li>
+                        <li><a href="our products.html">Products</a></li>
+                        <li><a href="about us .html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">Medical Tests</a></li>
+                        <li><a href="services.html">Pharmacy Services</a></li>
+                        <li><a href="products.html">Mart Products</a></li>
+                        <li><a href="services.html">Immunizations</a></li>
+                        <li><a href="services.html">Health Screenings</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Millenium City District Police Headquarters, Kasoa</li>
+                        <li><i class="fas fa-phone"></i> 025 797 1767 / 020 205 4157</li>
+                        <li><i class="fas fa-envelope"></i> hspharmacyghana@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 8am-10pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Health Station Pharmacy Ltd & Mart. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #04B4D8;"></i> for your health</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Form submission with validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields marked with *');
+                return;
+            }
+            
+            if (!isValidEmail(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            // In a real application, you would send the form data to a server here
+            // For this example, we'll simulate a successful submission
+            
+            // Show success message
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+            submitBtn.style.backgroundColor = '#004A7A';
+            
+            // Reset form after 2 seconds
+            setTimeout(() => {
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.backgroundColor = '';
+                
+                // Show confirmation message
+                alert('Thank you for your message! We will respond to you within 24 hours.');
+            }, 2000);
+        });
+        
+        // Email validation function
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        // Add focus effect to form inputs with glow
+        const formInputs = document.querySelectorAll('.form-group input, .form-group textarea, .form-group select');
+        
+        formInputs.forEach(input => {
+            // Add glow on focus
+            input.addEventListener('focus', function() {
+                this.style.boxShadow = '0 0 10px rgba(4, 180, 216, 0.5)';
+                this.style.borderColor = '#04B4D8';
+                this.style.backgroundColor = 'rgba(4, 180, 216, 0.02)';
+            });
+            
+            // Remove glow on blur
+            input.addEventListener('blur', function() {
+                this.style.boxShadow = '';
+                this.style.borderColor = '';
+                this.style.backgroundColor = '';
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate contact cards on scroll
+        const contactCards = document.querySelectorAll('.contact-card');
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Stagger the animation
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 200);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Set initial styles and observe
+        contactCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+
+</body>
+<a href="https://wa.me/233257971767?text=Hello%20Health%20Station%20Pharmacy,%20I%20would%20like%20to%20make%20an%20enquiry."
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const waBtn = document.querySelector('.whatsapp-float');
+    if (waBtn) {
+        waBtn.addEventListener('click', () => {
+            waBtn.style.animation = 'none';
+        });
+    }
+});
+</script>
+</body>
+</html>
